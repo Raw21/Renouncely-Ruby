@@ -1,0 +1,30 @@
+ <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Renouncely</h2>
+      <div class="toggle"></div>
+    </header>
+    <%= video_tag "Collage.mp4", autoplay: :autoplay, loop: :loop, muted: :true,controls: true, class: %>
+    <div class="overlay"></div>
+    <div class="text">
+      <h3>Unleashing Imagination</h3>
+      <p>Our mission at our auction website is to provide gaming studios and gaming developers with access to the most unique and rare game demos available. We believe that gaming is an art form, and we aim to showcase the creativity and craftsmanship of game designers through our platform. Our team is dedicated to curating a collection of game models from all over the world</p>
+      <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/qgckwCZ/tiktok-48-1.png"style ="filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(160deg) brightness(105%) contrast(102%);"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/XYDNrQD/youtube-4-48.png"style ="filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(160deg) brightness(105%) contrast(102%);" ></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><%= link_to "Unity", home_unity_path %></li>
+      <li><a href="#">Unreal Engine</a></li>
+      <li><a href="#">Godot</a></li>
+      <li><%= link_to "Contact", home_contact_path %></li>
+    </ul>
+    <%= javascript_include_tag("java.js")%>
+  </div>
